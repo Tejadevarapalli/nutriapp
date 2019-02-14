@@ -1,24 +1,29 @@
 
   <div class="container register-form">
     <div class="form">
+      <div class="adjust">
       <div class="note">
-        <h1>search page</h1>
-        <input type="text" class="search1" placeholder="Search" [(ngModel)]="search"/>
+        <h1>Nutri check</h1>
+        <em><input type="text" class="search1" placeholder="Search" [(ngModel)]="search"/></em>
         <button class="search" (click)="gosearch()">search</button>
+      </div>
       </div>
       <div class="form-content">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
               <div>
-                <h2><p><b style="color: #0062cc">Item name:{{result.hits[0].fields.item_name}}</b></p></h2>
+                <h2 style="width: 200%"><p><b><em>Item name:{{result.hits[0].fields.item_name}}</em></b></p></h2>
                 </div>
-                  </div>
-            <h2><p><b style="color: #0062cc">Weight: {{result.hits[0].fields.nf_serving_weight_grams}}</b></p></h2>
+              <br>
+              <div>
+                <h2 style="width: 200%"><p><b><em>Weight: {{result.hits[0].fields.nf_serving_weight_grams}} Grams</em></b></p></h2>
                     </div>
+              <br>
           <div>
-            <h2><p><b style="color: #0062cc">calories: {{result.hits[0].fields.nf_calories}}</b></p></h2>
+            <h2 style="width: 200%"><p><b><em>calories: {{result.hits[0].fields.nf_calories}} Cal</em></b></p></h2>
 </div>
+            </div>
         </div>
       </div>
     </div>
