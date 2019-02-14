@@ -1,3 +1,9 @@
+.custbutton
+{
+  right: 10%;
+}
+
+
 .search
 {
 border:none;
@@ -10,10 +16,7 @@ color: white;
   margin: 3% 0.5%;
 }
 
-.adjust
-{
-  margin:3% 0.5%;
-}
+
 .search1
 {
   border-radius: 1.5em;
@@ -30,7 +33,7 @@ color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 4% 0.1%;
+  margin: 3% 0.1%;
   shape-margin: 5%;
   border-radius:1.5rem;
 }
