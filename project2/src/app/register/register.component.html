@@ -1,0 +1,41 @@
+<!--register
+<form>
+
+<input id="name" type="text" placeholder="Enter Name" [(ngModel)]="setname"/>
+<input id="password" type="password" placeholder="Enter password" [(ngModel)]="setpassword"/>
+<button type="button">Submit</button>
+</form>
+register logic-->
+
+-->
+<div class="container register-form">
+  <div class="form">
+    <div class="note">
+      <p><i>Registration Page</i></p>
+    </div>
+    <div class="form-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Full Name" [(ngModel)]="fullname" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your UserID*"  [(ngModel)]="setname"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Your Password" [(ngModel)]="setpassword" />
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Confirm Password *" [(ngModel)]="recheckpassword"/>
+          </div>
+        </div>
+      </div>
+      <span>
+      <button type="button" class="btnSubmit" (click)="report()">Submit</button>
+        <a routerLink="/login" style="color: aliceblue"><i>login</i></a>
+      </span>
+    </div>
+  </div>
+</div>

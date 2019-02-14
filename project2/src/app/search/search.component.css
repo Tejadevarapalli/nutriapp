@@ -1,0 +1,39 @@
+.search
+{
+  top: 15%;
+border:none;
+border-radius:1.5rem;
+padding: 1%;
+width: 10%;
+cursor: pointer;
+background: #0062cc;
+color: white;
+}
+.search1
+{
+  border-radius: 1.5em;
+  width:50%;
+}
+
+.form-content
+{
+  padding: 5%;
+  border: 1px solid white;
+  margin-bottom: 2%;
+  shape-margin: 5%;
+  border-radius:1.5rem;
+}
+.form-control{
+  border-radius:1.5rem;
+}
+
+.note
+{
+  text-align: center;
+  height: 80%;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  line-height: 250%;
+  border-radius:1.5rem;
+}

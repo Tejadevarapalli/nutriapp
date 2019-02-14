@@ -1,0 +1,26 @@
+
+  <div class="container register-form">
+    <div class="form">
+      <div class="note">
+        <h1>search page</h1>
+        <input type="text" class="search1" placeholder="Search" [(ngModel)]="search"/>
+        <button class="search" (click)="gosearch()">search</button>
+      </div>
+      <div class="form-content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <div>
+                <h2><p><b style="color: #0062cc">Item name:{{result.hits[0].fields.item_name}}</b></p></h2>
+                </div>
+                  </div>
+            <h2><p><b style="color: #0062cc">Weight: {{result.hits[0].fields.nf_serving_weight_grams}}</b></p></h2>
+                    </div>
+          <div>
+            <h2><p><b style="color: #0062cc">calories: {{result.hits[0].fields.nf_calories}}</b></p></h2>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
