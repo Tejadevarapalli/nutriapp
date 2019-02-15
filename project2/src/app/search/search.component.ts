@@ -9,9 +9,9 @@ import { HostserviceService} from "../hostservice.service";
 export class SearchComponent implements OnInit {
 public search;
 public result: object;
+public url;
 
-  constructor(private host: HostserviceService) { }
-
+constructor(private host: HostserviceService) { }
   ngOnInit() {
   }
   gosearch() {
@@ -19,5 +19,7 @@ public result: object;
       this.result = data;
       console.log(data);
     })
+    this.url='https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?username=f61d1286-72ec-4d67-a0a2-16969a62acac&password=4AmGC8jSSy5G&text='+this.search+'';
+
   }
 }

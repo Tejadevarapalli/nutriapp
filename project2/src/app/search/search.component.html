@@ -1,5 +1,9 @@
-
-  <div class="container register-form">
+<div *ngIf="url" style="display:none">
+  <audio controls autoplay="on">
+    <source [src]="url" type="audio/ogg">
+  </audio>
+</div>
+ <div class="container register-form">
     <div style="width:100%; text-align: end"><button type="button" class="btn btn-primary" routerLink="/login" style="border-radius: 1.5em">Logout</button>
     </div>
     <div class="form">
@@ -28,4 +32,4 @@
       </div>
     </div>
   </div>
-
+ </div>
